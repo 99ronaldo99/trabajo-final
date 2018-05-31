@@ -1,18 +1,93 @@
-<!--
-  Generated template for the EjerciciosPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>ejercicios</ion-title>
+  <ion-navbar color="corporate" >
+    <ion-title  >Ejercicios</ion-title>
+
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+
+  <ion-card>
+  <ion-card-content>
+    <strong>Aqui vas a poder encontrar diferentes ejercicios, para cada grupo muscular.
+    </strong>
+  </ion-card-content>
+</ion-card>
+
+  <ion-list>
+
+  <ion-item-sliding>
+    
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openPectorales()" >Pectorales</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openBiceps()" >Biceps</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openTriceps()" >Triceps</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openEspalda()" >Espalda</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openAbdomen()" >Abdomen</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openPiernas()" > Piernas </a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openGluteos()" >Gluteos</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item (click)="openHombros()" >Hombros</a>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-avatar item-start>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <a ion-item  >Triceps</a>(click)="openModal({charNum: 2})"
+    </ion-item> --> 
+
+  </ion-item-sliding>
+
+</ion-list>
 
 </ion-content>
