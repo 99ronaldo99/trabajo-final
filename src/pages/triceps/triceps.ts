@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import  {InformacionPage}from '../informacion/informacion';
+import { ModalController} from 'ionic-angular';
 
 /**
  * Generated class for the TricepsPage page.
@@ -15,11 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TricepsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+  	public navCtrl: NavController, 
+  	public navParams: NavParams,
+  	public modalCtrl: ModalController,) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TricepsPage');
+  }
+  openModal(characterNum) {
+
+    let modal = this.modalCtrl.create(InformacionPage, characterNum);
+    modal.present();
   }
 
 }

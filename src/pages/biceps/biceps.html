@@ -1,18 +1,111 @@
-<!--
-  Generated template for the BicepsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>biceps</ion-title>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Biceps
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  
+  <ion-slides pager>
+
+  <ion-slide >
+          <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="pett">
+          <ion-segment-button value="puppiess">
+            Ejercicios con maquina
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+
+  <ion-list>
+    <a ion-item (click)="openModal({charNum: 18})">
+      Curl de Biceps alterno
+    </a>
+    <a ion-item (click)="openModal({charNum: 19})">
+      Curl de biceps concentrado
+    </a>
+    <a ion-item (click)="openModal({charNum: 20 })">
+      Curl martillo alterno
+    </a>
+    <a ion-item (click)="openModal({charNum: 22})">
+      Curl de biceps en polea
+    </a>
+    <a ion-item (click)="openModal({charNum: 23})">
+      curl de biceps con barra
+    </a>
+    <a ion-item (click)="openModal({charNum: 24 })">
+      Curl en banco Scott
+    </a>
+    <a ion-item (click)="openModal({charNum: 25})">
+      Curl de biceps agarre pronacion
+    </a>
+    <a ion-item (click)="openModal({charNum: 26})">
+      Curl de biceps en polea alta
+    </a>
+    <a ion-item (click)="openModal({charNum: 27 })">
+      Curl de biceps en banco inclinado
+    </a>
+  </ion-list>
+
+
+
+
+
+
+  </ion-slide>
+
+  
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Peso corporal
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+   <ion-list>
+    <a ion-item (click)="openModal({charNum: 28})">
+      Headbangers
+    </a>
+    <a ion-item (click)="openModal({charNum: 29})">
+      Dominada agarre supinacion
+    </a>
+    <a ion-item (click)="openModal({charNum: 30 })">
+      Dominada agarre pronacion
+    </a>
+    <a ion-item (click)="openModal({charNum: 31})">
+      Dominada comando <!--  -->
+    </a>
+    <a ion-item (click)="openModal({charNum: 32})">
+      Remos supinos
+    </a>
+    <a ion-item (click)="openModal({charNum: 33 })">
+      Dominada lateral  <!-- hacer como la flexion arquero -->
+    </a>
+    <a ion-item (click)="openModal({charNum: 34})">
+      Curl de biceps agarre pronacion
+    </a>
+    <a ion-item (click)="openModal({charNum: 35})">
+      Dominada en L
+    </a>
+    <a ion-item (click)="openModal({charNum: 36 })">
+      Dominada agarre mixto
+    </a>
+   
+    
+  </ion-list>
+
+
+  </ion-slide>
+
+  
+  
+
+</ion-slides>
+
 
 </ion-content>

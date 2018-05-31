@@ -13,6 +13,109 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
+	<ion-slides pager>
+
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment >
+      <ion-segment-button value="puppi">
+      Ejercicios con maquina
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+<ion-list>
+  
+    <button ion-item (click)="openModal({charNum: 37})">
+      Extencion de triceps en polea
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 38})">
+      Extension de triceps agarre invertido
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 39})">
+      Press frances con barra
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 40})">
+      Press frances con mancuernas  
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 41})">
+      Extension alternada con macuerna
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 42})">
+      Extension sentado con mancuerna 
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 43})">
+      Extension sentado con barra
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 44})">
+     Extension de triceps inclinado con mancuerna
+    </button>
+
+    <button  ion-item (click)="openModal({charNum: 45})">
+      Extension de triceps en polea a una mano
+    </button>
+
+</ion-list>
+
+  </ion-slide>
+
+  
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pe">
+      <ion-segment-button value="pu">
+        Peso corporal
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+   <ion-list>
+    <button ion-item (click)="openModal({charNum: 46})">
+      Flexiones Diamantes
+    </button>
+    <button ion-item (click)="openModal({charNum: 47})">
+      Fondos en paralelas
+    </button>
+    <button ion-item (click)="openModal({charNum: 48})">
+      Fondos en banco
+    </button>
+    <button ion-item (click)="openModal({charNum: 49})">
+      Fondos en barra recta
+    </button>
+    <button ion-item (click)="openModal({charNum: 50})">
+      Fondos Coreanos
+    </button>
+    <button ion-item (click)="openModal({charNum: 51})">
+      Flexiones en Vertical 
+    </button>
+    <button ion-item (click)="openModal({charNum: 52})">
+      Extensión de Tríceps en Suelo
+    </button>
+    <button ion-item (click)="openModal({charNum: 53})">
+      Extensión de Tríceps en Barra
+    </button>
+    <button ion-item (click)="openModal({charNum: 54})">
+      Fondos Imposibles
+    </button>
+
+
+  </ion-list>
+
+
+  </ion-slide>
+
+  
+  
+
+</ion-slides>
 
 </ion-content>

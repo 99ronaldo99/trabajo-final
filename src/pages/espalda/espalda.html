@@ -13,6 +13,108 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+	 <ion-slides pager>
+
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment >
+      <ion-segment-button value="puppies">
+      Ejercicios con maquina
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+<ion-list>
+  
+    <button ion-item (click)="openModal({charNum: 55})">
+      Polea al pecho
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 56})">
+      Polea al pecho con agarre estrecho
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 57})">
+      Pull over polea alta
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 58})">
+      Remo en polea baja
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 59})">
+      Remo con mancuerna
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 60})">
+      Remo con barra prono 
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 61})">
+      Polea al pecho agarre supino
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 62})">
+      Remo con barra supino
+    </button>
+
+    <button  ion-item (click)="openModal({charNum: 63})">
+      Remo con mancuernas inclinado
+    </button>
+
+</ion-list>
+
+  </ion-slide>
+
+  
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Peso corporal
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+   <ion-list>
+    <button ion-item (click)="openModal({charNum: 65})">
+      Dominadas agarre hancho pronacion
+    </button>
+    <button ion-item (click)="openModal({charNum: 66})">
+     Dominada agarre supinacion
+    </button>
+    <button ion-item (click)="openModal({charNum: 67})">
+      Dominadas agarre pronacion
+    </button>
+    <button ion-item (click)="openModal({charNum: 68})">
+      Dominada comando
+    </button>
+    <button ion-item (click)="openModal({charNum: 69})">
+     Remos supinos
+    </button>
+    <button ion-item (click)="openModal({charNum: 70})">
+     Dominada lateral 
+    </button>
+    <button ion-item (click)="openModal({charNum: 71})">
+     Curl de biceps agarre pronacion 
+    </button>
+    <button ion-item (click)="openModal({charNum: 72})">
+      Dominada en L
+    </button>
+    <button ion-item (click)="openModal({charNum: 73})">
+      Dominada agarre mixto
+    </button>
+
+  </ion-list>
+  </ion-slide>
+
+  
+  
+
+</ion-slides>
+
+	
 
 </ion-content>
