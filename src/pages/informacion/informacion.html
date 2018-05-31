@@ -1,18 +1,46 @@
-<!--
-  Generated template for the InformacionPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>informacion</ion-title>
-  </ion-navbar>
-
+  <ion-toolbar>
+    <ion-title>
+      Descripcion del ejercicio
+    </ion-title>
+    <ion-buttons start>
+     
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ion-list>
+      <ion-item>
+        <h1 text-center><strong>{{character.name}}</strong></h1>
+        <img  src="{{character.image}}" style="width: 360px; height: 240px;" >
+          <ion-card>
+          <ion-card-content>
+             <p><strong> Intrucciones</strong> </p>
+            <p>{{character.quote1}}</p>
+             <p>{{character.quote2}}</p>
+             <p>{{character.quote3}}</p>
+             <p>{{character.quote4}}</p>
+             <p>{{character.quote5}}</p>
+             <p>{{character.quote6}}</p>
+
+          </ion-card-content>
+        </ion-card> 
+
+        <hr/>
+
+         <h2 text-center><strong>Musculos usados </strong></h2>
+         <img  src="{{character.photo}}" style="width: 360px; height: 240px;" >
+         
+        
+      </ion-item>
 
 
-<ion-content padding>
 
+  </ion-list>
 </ion-content>
+
+<ion-footer > 
+  <ion-navbar  >
+
+  </ion-navbar>
+</ion-footer>

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the PectoralesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ModalController,} from 'ionic-angular';
+import  {InformacionPage}from '../informacion/informacion'
+ 
+
+
 
 @IonicPage()
 @Component({
@@ -14,12 +13,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pectorales.html',
 })
 export class PectoralesPage {
+	
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+  	public navCtrl: NavController, 
+  	public navParams: NavParams,
+    public params: NavParams,
+    public modalCtrl: ModalController,
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PectoralesPage');
+  }
+
+
+
+  openModal(characterNum) {
+
+    let modal = this.modalCtrl.create(InformacionPage, characterNum);
+    modal.present();
   }
 
 }
