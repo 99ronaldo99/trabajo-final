@@ -28,6 +28,7 @@ import { AbdomenPage } from '../pages/abdomen/abdomen';
 import { EspaldaPage } from '../pages/espalda/espalda';
 import { GluteosPage } from '../pages/gluteos/gluteos';
 import { InformacionPage } from '../pages/informacion/informacion';
+import { CronometroPage } from '../pages/cronometro/cronometro';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -74,6 +75,7 @@ firebase.initializeApp(config);
     PiernasPage,
     AbdomenPage,
     InformacionPage,
+    CronometroPage
   ],
   imports: [
     BrowserModule,
@@ -107,6 +109,7 @@ firebase.initializeApp(config);
     PiernasPage,
     AbdomenPage,
     InformacionPage,
+    CronometroPage
   ],
   providers: [
     StatusBar,

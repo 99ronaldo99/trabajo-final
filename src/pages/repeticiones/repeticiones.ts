@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { AlertController } from 'ionic-angular';
+
+
 
 /**
  * Generated class for the RepeticionesPage page.
@@ -15,11 +19,33 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RepeticionesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {
+    peso : '',
+    repeticiones : ''
+  }
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RepeticionesPage');
+  }
+
+  openTabs(){
+    this.navCtrl.setRoot(HomePage)
+  }
+
+  tryRepe(){
+    var rm = ( 0.0333 * parseInt(this.user.peso) * parseInt(this.user.repeticiones) + 100 );
+    let alert = this.alertCtrl.create({
+          title: 'Resultado',
+            message: 'Su resultado es '+ rm,
+            buttons: ['OK']
+          });
+        alert.present();
   }
 
 }

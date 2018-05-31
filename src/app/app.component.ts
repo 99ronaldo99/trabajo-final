@@ -11,6 +11,7 @@ import { AcercaPage } from '../pages/acerca/acerca';
 import { ImcPage } from '../pages/imc/imc';
 import { CaloriasPage } from '../pages/calorias/calorias';
 import { RepeticionesPage } from '../pages/repeticiones/repeticiones';
+import { CronometroPage } from '../pages/cronometro/cronometro';
 
 
 import * as firebase from 'firebase';
@@ -56,7 +57,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: ' Inicio', component: HomePage,icon: 'home' },
+      { title: ' Cronometro', component: CronometroPage,icon: 'time' },
       /*{ title: ' Tamizaje', component: TamizajePage, icon: 'body' },*/
       { title: ' Calcular IMC', component: ImcPage, icon: 'happy' },
       { title: ' Calorias necesarias', component: CaloriasPage, icon: 'nutrition' },
@@ -79,6 +80,6 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 }
