@@ -1,18 +1,456 @@
-<!--
-  Generated template for the NutricionPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>nutricion</ion-title>
+  <ion-navbar color="corporate" >
+    <ion-title  >Nutricion</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+  <div>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button  value="bajo">
+        Bajo de peso
+      </ion-segment-button>
+      <ion-segment-button value="normal">
+        Peso normal
+      </ion-segment-button>
+      <ion-segment-button value="alto">
+        Sobre peso
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'bajo'">
+      <ion-item>
+          <img src="assets/imagenes/delgado.jpeg">
+      </ion-item>
+
+      <ion-card>
+  <ion-card-content>
+    <strong>Te recomendamos leer detendamente la informacion e implementarla a tu estilo de vida,
+      aqui encontraras las pautas necesarias para aumentar de peso. 
+    </strong>
+  </ion-card-content>
+</ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <strong>1. 
+        </strong>En la dieta para aumentar de peso, comer por lo menos cada 3 horas es muy importante para aumentar los niveles de insulina elevados
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <strong>2. 
+        </strong>Te recomendamos consumir proteinas en todas las comidas,las cuales se encuentran en carnes, pollo, pescados, huevos, quesos y yogurt.
+      </ion-card-content>
+    </ion-card>
+
+     <ion-card>
+      <ion-card-content>
+        <strong>3. 
+        </strong>Consumir grasas buenas, como frutos secos como maní y almendras, aguacate, coco, aceite de oliva y semillas
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <strong>4. 
+        </strong>Comer por lo menos 3 frutas por día y consumir ensalada en el almuerzo ayuda a aumentar la cantidad de vitaminas y minerales de la dieta, para favorecer la ganancia de masa muscular.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <strong>5. 
+        </strong>Beber buena cantidad de agua y mantenerse bien hidratado es esencial para ganar masa muscular, ya que la hipertrofia, que es el aumento del tamaño de las células musculares, sólo ocurre si las células están bien hidratadas para aumentar de volumen. 
+      </ion-card-content>
+    </ion-card>
+
+
+      <p>
+    <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Tabla de alimentos a consumir 
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <table class="table table-responsive ">
+    <thead>
+      <tr>
+        <th scope="col">Comida</th>
+        <th scope="col">Dia 1 </th>
+        <th scope="col">Dia 2</th>
+        <th scope="col">Dia 3</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Desayuno</th>
+        <td>2 rebanadas de pan integral con huevo y queso bajo en grasa+ 1 taza de café con leche descremada</td>
+        <td>1 tortilla de trigo (fajitas) con pollo a la plancha y queso bajo en grasa+ 1 vaso de leche descremada con cacao en polvo</td>
+        <td>1 vaso de jugo sin azúcar + 1 tortilla con 2 huevos y pollo a la plancha</td>
+     
+      </tr>
+      <tr>
+        <th scope="row">Merienda</th>
+        <td>1 fruta + 10 unidades de marañón o merey</td>
+        <td>1 yogur natural con miel y semillas de chía</td>
+        <td>1 banana machacada con avena y cucharada de mantequilla de maní</td>
+        
+      </tr>
+      <tr>
+        <th scope="row">Almuerzo/Cena</th>
+        <td>  4 cucharadas de arroz integral + 3 cucharadas de frijoles + 150 g de pechuga de pavo a la plancha + ensalada cruda de repollo, zanahoria y pimentones</td>
+        <td>1 rueda de salmón + puré de batata + ensalada de lechuga, tomate y pepino con aceite de oliva</td>
+        <td>Pasta integral con carne molida y salsa de tomate natural + ensalada de vegetales cocidos como brócoli y zanahoria +1 vaso de jugo</td>
+       
+      </tr>
+      <tr>
+        <th scope="row">Merienda noche</th>
+        <td>1 yogur natural + 1 sándwich integral de pollo con requesón + zanahoria rallada </td>
+        <td>Batido de fruta con 1 cucharada de mantequilla de maní + 2 cucharadas de avena</td>
+        <td>1 taza de café con leche descremada + 1 tortilla (fajitas) de trigo rellena con 1/2 lata de atún + lechuga picada y tomate</td>
+        
+      </tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+      ...
+    </ion-list>
+
+
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <ion-list *ngSwitchCase="'normal'">
+      <ion-item>
+      
+          <img src="assets/imagenes/normal.jpeg">
+       
+      </ion-item>
+      
+          <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Rutina principiante
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>culo</td>
+            <td>tetas</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExamplee" aria-expanded="false" aria-controls="collapseExample">
+          Rutina Nivel intermedio
+        </button>
+      </p>
+      <div class="collapse" id="collapseExamplee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExampleee" aria-expanded="false" aria-controls="collapseExample">
+          Rutina Nivel avanzado
+        </button>
+      </p>
+      <div class="collapse" id="collapseExampleee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      ...
+    </ion-list>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <ion-list *ngSwitchCase="'alto'">
+      <ion-item>
+      
+          <img src="assets/imagenes/gordo.jpg">
+       
+      </ion-item>
+      
+          <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Primer y segundo mes 
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>culo</td>
+            <td>tetas</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExamplee" aria-expanded="false" aria-controls="collapseExample">
+          Tercer y cuarto mes 
+        </button>
+      </p>
+      <div class="collapse" id="collapseExamplee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExampleee" aria-expanded="false" aria-controls="collapseExample">
+          Quinto y sexto mes 
+        </button>
+      </p>
+      <div class="collapse" id="collapseExampleee">
+-        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      ...
+    </ion-list>
+
+  </div>
+
+
+	
+ 
+  
+
+
 
 </ion-content>

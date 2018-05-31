@@ -4,8 +4,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
+/*import { TamizajePage } from '../pages/tamizaje/tamizaje';*/
+/*import { ConfiguracionesPage } from '../pages/configuraciones/configuraciones';*/
+import { AcercaPage } from '../pages/acerca/acerca';
+import { ImcPage } from '../pages/imc/imc';
+import { CaloriasPage } from '../pages/calorias/calorias';
+import { RepeticionesPage } from '../pages/repeticiones/repeticiones';
+
+
 import * as firebase from 'firebase';
 
 
@@ -16,10 +23,14 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = LoginPage;
+  /*rootPage: any= this.isLogged() ? HomePage : LoginPage*/
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(
+    public platform: Platform, 
+    public statusBar: StatusBar, 
+    public splashScreen: SplashScreen) {
     
     
 
@@ -29,8 +40,9 @@ export class MyApp {
 
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        // User is signed in.
+        // User is signed in .
         that.rootPage = HomePage;
+
         // ...
       } else {
         // User is signed out.
@@ -44,8 +56,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: ' Inicio', component: HomePage,icon: 'home' },
+      /*{ title: ' Tamizaje', component: TamizajePage, icon: 'body' },*/
+      { title: ' Calcular IMC', component: ImcPage, icon: 'happy' },
+      { title: ' Calorias necesarias', component: CaloriasPage, icon: 'nutrition' },
+      { title: ' Repeticion maxima', component: RepeticionesPage, icon: 'pulse' },
+      /*{ title: ' Configuracion', component: ConfiguracionesPage, icon: 'settings' },*/
+      { title: ' Acerca de', component: AcercaPage, icon: 'information-circle' },
     ];
 
   }
