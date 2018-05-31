@@ -8,6 +8,26 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
+import { NutricionPage } from '../pages/nutricion/nutricion';
+import { EjerciciosPage } from '../pages/ejercicios/ejercicios';
+import { RutinasPage } from '../pages/rutinas/rutinas';
+import { RecomendacionesPage } from '../pages/recomendaciones/recomendaciones';
+import { TamizajePage } from '../pages/tamizaje/tamizaje';
+import { ConfiguracionesPage } from '../pages/configuraciones/configuraciones';
+import { AcercaPage } from '../pages/acerca/acerca';
+import { ImcPage } from '../pages/imc/imc';
+import { CaloriasPage } from '../pages/calorias/calorias';
+import { RepeticionesPage } from '../pages/repeticiones/repeticiones';
+import { TabsPage } from '../pages/tabs/tabs';
+import { PectoralesPage } from '../pages/pectorales/pectorales';
+import { BicepsPage } from '../pages/biceps/biceps';
+import { TricepsPage } from '../pages/triceps/triceps';
+import { HombrosPage } from '../pages/hombros/hombros';
+import { PiernasPage } from '../pages/piernas/piernas';
+import { AbdomenPage } from '../pages/abdomen/abdomen';
+import { EspaldaPage } from '../pages/espalda/espalda';
+import { GluteosPage } from '../pages/gluteos/gluteos';
+import { InformacionPage } from '../pages/informacion/informacion';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,7 +53,27 @@ firebase.initializeApp(config);
     HomePage,
     ListPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    NutricionPage,
+    EjerciciosPage,
+    RutinasPage,
+    RecomendacionesPage,
+    TamizajePage,
+    ConfiguracionesPage,
+    AcercaPage,
+    ImcPage,
+    CaloriasPage,
+    RepeticionesPage,
+    TabsPage,
+    BicepsPage,
+    EspaldaPage,
+    PectoralesPage,
+    GluteosPage,
+    TricepsPage,
+    HombrosPage,
+    PiernasPage,
+    AbdomenPage,
+    InformacionPage,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +86,27 @@ firebase.initializeApp(config);
     HomePage,
     ListPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    NutricionPage,
+    EjerciciosPage,
+    RutinasPage,
+    RecomendacionesPage,
+    TamizajePage,
+    ConfiguracionesPage,
+    AcercaPage,
+    ImcPage,
+    CaloriasPage,
+    RepeticionesPage,
+    TabsPage,
+     BicepsPage,
+    EspaldaPage,
+    PectoralesPage,
+    GluteosPage,
+    TricepsPage,
+    HombrosPage,
+    PiernasPage,
+    AbdomenPage,
+    InformacionPage,
   ],
   providers: [
     StatusBar,
