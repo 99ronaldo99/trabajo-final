@@ -3,37 +3,42 @@ import { IonicPage, NavController, LoadingController, ToastController, NavParams
 import { UsersserviceProvider } from '../../providers/usersservice/usersservice';
 import * as firebase from 'firebase';
 import { HomePage } from '../home/home';
-/**
- * Generated class for the SignupPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+/*import { Utils } from '../../libs/utils/utils';*/
 
 @IonicPage()
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html',
-  providers: [UsersserviceProvider]
+  providers: [UsersserviceProvider],
+
 })
 export class SignupPage {
 
-  public skills : string;
-  public email : string;
-  public phone : any;
+  align = 'start';
+
+  public nombre : any;
+  public apellido : any;
+  public edad : any;
+  public estatura : string;
+  public email :   string;
   public password : any;
-  public first_name : any;
-  public last_name : any;
-  public city : any;
-  public state : any;
-  public country : any;
-  public isJobSeeker : boolean;
-
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, 
+  public peso : any;
+  public masculino : boolean;
+  public femenino : boolean;
+  public BajaIntensidad : boolean;
+  public MedianaIntensidad : boolean;
+  public NingunaActividad : boolean;
+  public AltaIntensidad : boolean;
+  
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams, 
     public usersserviceProvider : UsersserviceProvider, 
-    public toastCtrl: ToastController, public loadingCtrl: LoadingController) {
-      //
+    public toastCtrl: ToastController, 
+    public loadingCtrl: LoadingController,
+   /* public utils: Utils*/
+    ) {
+          //
   }
 
   ionViewDidLoad() {
@@ -44,45 +49,49 @@ export class SignupPage {
   doSignup(){
 
     var   account = {
-      first_name: this.first_name,
-      last_name: this.last_name || '',
-      skills: this.skills || '',
+      nombre: this.nombre,
+      apellido: this.apellido || '',
+      edad: this.edad || '',
+      estatura: this.estatura || '',
       email: this.email,
-      phone: this.phone || '',
       password: this.password,
-      city: this.city || '',
-      state: this.state || '',
-      country: this.country || '',
-      isJobSeeker : this.country || ''
+      peso: this.peso || '',
+      masculino : this.masculino || '',
+      femenino : this.femenino || '',
+      BajaIntensidad : this.BajaIntensidad || '',
+      MedianaIntensidad : this.MedianaIntensidad || '',
+      NingunaActividad : this.NingunaActividad || '',
+      AltaIntensidad : this.AltaIntensidad || '',
 
     };
+ 
 var that = this;
 
 var loader = this.loadingCtrl.create({
-      content: "Please wait...",
+      content: "Cargando",
       
     });
     loader.present();
 
 
-  	this.usersserviceProvider.signupUserService(account).then(authData => {
-  		//successful
-  		loader.dismiss();
-  		that.navCtrl.setRoot(HomePage);
+    this.usersserviceProvider.signupUserService(account).then(authData => {
+      //successful
+      loader.dismiss();
+      that.navCtrl.setRoot(HomePage);
 
-  	}, error => {
+    }, error => {
 loader.dismiss();
      // Unable to log in
       let toast = this.toastCtrl.create({
-        message: error,
-        duration: 3000,
+        message: 'Correo electronico invalido',
+        duration: 5000,
         position: 'top'
       });
       toast.present();
 
       that.password = ""//empty the password field
 
-  	});
+    });
 
     
   }

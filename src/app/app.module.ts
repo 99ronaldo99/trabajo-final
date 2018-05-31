@@ -37,13 +37,13 @@ import { UsersserviceProvider } from '../providers/usersservice/usersservice';
 
 // Initialize Firebase
 export const config = {
-  apiKey: "AIzaSyBWq4lgN3VUCW_kpNbBXQ2ColCQxcQ_ew0",
-  authDomain: "ionicimageupload.firebaseapp.com",
-  databaseURL: "https://ionicimageupload.firebaseio.com",
-  projectId: "ionicimageupload",
-  storageBucket: "ionicimageupload.appspot.com",
-  messagingSenderId: "133677727036"
-};
+    apiKey: "AIzaSyClGgQUX1esoRrK_EpVwFZ07FRBTSFOpVA",
+    authDomain: "play-gym-e0995.firebaseapp.com",
+    databaseURL: "https://play-gym-e0995.firebaseio.com",
+    projectId: "play-gym-e0995",
+    storageBucket: "play-gym-e0995.appspot.com",
+    messagingSenderId: "99165358960"
+  };
 firebase.initializeApp(config);
 
 

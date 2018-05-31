@@ -1,13 +1,7 @@
-<!--
-  Generated template for the SignupPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>signup</ion-title>
+  <ion-navbar color="corporate" >
+    <ion-title padding text-center >Registrar usuario</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,65 +10,107 @@
 <ion-content padding>
 
     <div class="splash-logo"></div>
+
+        <ion-card>
+          <ion-card-header>
+            <STRONG>¡Atencion¡</STRONG>
+          </ion-card-header>
+          <ion-card-content>
+            Digite correctamente tu informacion,asi podemos llevar un mejor seguimiento en tu progreso.
+          </ion-card-content>
+        </ion-card>
     
     
         <ion-list>
         
-          <ion-item >
-            <ion-label stacked>Skill Set (separate with comma)</ion-label>
-            <ion-input type="text" [(ngModel)]="skills" name="skills" placeholder="eg. PHP, Writing, Chef" required="required"></ion-input>
+           <ion-item>
+            <ion-label floating>Nombres</ion-label>
+            <ion-input type="text" [(ngModel)]="nombre" name="nombre"></ion-input>
           </ion-item>
-          
-         <ion-item>
-            <ion-label stacked>Email</ion-label>
-            <ion-input type="email" [(ngModel)]="email" name="email" placeholder="eg. john@doe.com"></ion-input>
-          </ion-item>
-          <ion-item >
-              <ion-label stacked>Phone</ion-label>
-              <ion-input type="text" [(ngModel)]="phone" name="phone" placeholder="eg. 0802222222" required="required"></ion-input>
-            </ion-item>
-      
-      
     
           <ion-item>
-            <ion-label stacked>Password</ion-label>
+            <ion-label floating>Apellidos</ion-label>
+            <ion-input type="text" [(ngModel)]="apellido" name="apellido"></ion-input>
+          </ion-item>
+
+           <ion-item >
+              <ion-label floating>Edad</ion-label>
+              <ion-input type="number" [(ngModel)]="edad" name="edad" required="required"></ion-input>
+            </ion-item>
+    
+
+          <ion-item >
+            <ion-label floating>Estatura(cm)</ion-label>
+            <ion-input type="number" [(ngModel)]="estatura" name="estatura" required="required"></ion-input>
+          </ion-item>
+          
+            <ion-item>
+            <ion-label floating>Peso(kg)</ion-label>
+            <ion-input type="number" [(ngModel)]="peso" name="peso"></ion-input>
+          </ion-item>
+
+         <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+          </ion-item>
+         
+          <ion-item>
+            <ion-label floating>Crear Contraseña</ion-label>
             <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
           </ion-item>
 
     <hr/>
-          <ion-item>
-            <ion-label stacked>First name</ion-label>
-            <ion-input type="text" [(ngModel)]="first_name" name="first_name"></ion-input>
+
+          <ion-list radio-group>
+            <hr/>
+            <ion-list-header>
+              Genero  (Solo una opcion)
+            </ion-list-header>
+
+            <ion-item>
+            <ion-label>Masculino</ion-label>
+            <ion-toggle [(ngModel)]="masculino" name="phone" checked="false"></ion-toggle>
           </ion-item>
-    
-          <ion-item>
-            <ion-label stacked>Last name</ion-label>
-            <ion-input type="text" [(ngModel)]="last_name" name="last_name"></ion-input>
+
+            <ion-item>
+            <ion-label>Femenino</ion-label>
+            <ion-toggle [(ngModel)]="femenino" name="phone" checked="false"></ion-toggle>
           </ion-item>
-    
-          <ion-item>
-            <ion-label stacked>City</ion-label>
-            <ion-input type="text" [(ngModel)]="city" name="city"></ion-input>
+
+          </ion-list>
+          
+            <hr/>
+          <ion-list radio-group>
+            <hr/>
+            <ion-list-header>
+              Actividad fisica(Selecciona 1 opcion)
+            </ion-list-header>
+
+             <ion-item>
+            <ion-label>Ninguna actividad</ion-label>
+            <ion-toggle [(ngModel)]="NingunaActividad" name="phone" checked="false"></ion-toggle>
           </ion-item>
-          <ion-item>
-            <ion-label stacked>State/Province</ion-label>
-            <ion-input type="text" [(ngModel)]="state" name="state"></ion-input>
+
+             <ion-item>
+            <ion-label>Baja(1 a 2 dias de ejercicio)</ion-label>
+            <ion-toggle [(ngModel)]="BajaIntensidad" name="phone" checked="false"></ion-toggle>
           </ion-item>
-    
-    
-        
-    
-           <ion-item>
-            <ion-label>Looking for Job?</ion-label>
-            <ion-toggle [(ngModel)]="isJobSeeker" name="phone" checked="false"></ion-toggle>
-          </ion-item>
+
+              <ion-item>
+              <ion-label>Media(3 a 4 dias de ejercicio)</ion-label>
+              <ion-toggle [(ngModel)]="MedianaIntensidad" name="phone" checked="false"></ion-toggle>
+            </ion-item>
+            
+              <ion-item>
+              <ion-label>Alta(5 o +5 dias de ejercicio)</ion-label>
+              <ion-toggle [(ngModel)]="AltaIntensidad" name="phone" checked="false"></ion-toggle>
+            </ion-item>
+
+          </ion-list>
     
           <div padding text-center>
-            <button ion-button color="danger" round (click)="doSignup()" >Signup</button>
+            <button ion-button color="hola" round (click)="doSignup()" >Signup</button>
           </div>
     
         </ion-list>
-
-    
-
 </ion-content>
