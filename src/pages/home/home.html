@@ -1,18 +1,95 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+<ion-header >
+  <ion-navbar color="corporate" >
+    
+    <button ion-button menuToggle>  
+      <ion-icon name="menu">
+        <ion-nav  id="nav" #content [root]="rootPage"></ion-nav>
+      </ion-icon>
     </button>
-    <ion-title>Welcome</ion-title>
+    
+    <ion-title padding   >
+      Play Gym
+       <!-- <button ion-button color="corporate" style="float: right;" (click)="doLogout()" >
+        Cerrar cuenta
+      </button> -->
+
+       <!-- <button ion-button round style="float: right;"  (click)="openMenu()">
+        <ion-icon name="more">
+           </ion-icon>
+      </button> -->
+
+        <ion-fab class="submenu" right bottom>
+          <button  ion-fab color="light" mini ><ion-icon name="arrow-dropleft"></ion-icon>
+          </button>
+          <ion-fab-list side="left">
+            <button ion-fab (click)="openConfiguraciones()" ><ion-icon name="settings"></ion-icon></button>
+            <button ion-fab (click)="openMenu()" ><ion-icon name="contacts"></ion-icon></button>
+            <button ion-fab (click)="doLogout()" ><ion-icon  name="exit"></ion-icon></button>
+          </ion-fab-list>
+        </ion-fab>
+
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-content>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+
+
+  <ion-slides pager >
+  <ion-slide >
+    <ion-toolbar no-border-top>
+     <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Ejercicios
+    </ion-segment-button>
+  </ion-segment>
+  </ion-toolbar>
+    <ion-img  style="width: 360px; height: 240px;" (click)="openEjercicios()" src="assets/imagenes/ejercicios.jpeg"></ion-img>
+  
+  
+
+  </ion-slide>
+
+
+
+  <ion-slide >
+    <ion-toolbar no-border-top>
+     <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Rutinas
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+    <ion-img  style="width: 360px; height: 240px;" (click)="openRutinas()" src="assets/imagenes/rutinas.jpeg"></ion-img>
+  </ion-slide>
+  
+  <ion-slide >
+    <ion-toolbar no-border-top>
+     <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Nutricion
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+    <ion-img  style="width: 360px; height: 240px;" (click)="openNutricion()" src="assets/imagenes/reconutri.jpg"></ion-img>
+  </ion-slide>
+
+  <ion-slide >
+    <ion-toolbar no-border-top>
+     <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Recomendaciones
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+    <ion-img  style="width: 360px; height: 240px;" (click)="openRecomendaciones()" src="assets/imagenes/nut.jpg"></ion-img>
+  </ion-slide>
+
+</ion-slides>
+
 </ion-content>
+
+
+

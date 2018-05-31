@@ -1,18 +1,455 @@
-<!--
-  Generated template for the RutinasPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>rutinas</ion-title>
+  <ion-navbar color="corporate" >
+    <ion-title  >Rutinas</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+     <div>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button  value="bajo">
+        Bajo de peso
+      </ion-segment-button>
+      <ion-segment-button value="normal">
+        Peso normal
+      </ion-segment-button>
+      <ion-segment-button value="alto">
+        Sobre peso
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'bajo'">
+      <ion-item>
+          <img src="assets/imagenes/delgado.jpeg">
+      </ion-item>
+
+      <p>
+    <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Rutina de peso corporal
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <table class="table table-responsive ">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">lunes</th>
+        <th scope="col">Martes</th>
+        <th scope="col">Miercoles</th>
+        <th scope="col">Jueves</th>
+        <th scope="col">viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>culo</td>
+        <td>tetas</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+         <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+
+  <p>
+    <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExamplee" aria-expanded="false" aria-controls="collapseExample">
+      Rutina Con pesas
+    </button>
+  </p>
+  <div class="collapse" id="collapseExamplee">
+    <div class="card card-body">
+      <table class="table table-responsive ">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">lunes</th>
+        <th scope="col">Martes</th>
+        <th scope="col">Miercoles</th>
+        <th scope="col">Jueves</th>
+        <th scope="col">viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mancuernas</td>
+        <td>remos </td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+         <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+      ...
+    </ion-list>
+
+
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <ion-list *ngSwitchCase="'normal'">
+      <ion-item>
+      
+          <img src="assets/imagenes/normal.jpeg">
+       
+      </ion-item>
+      
+          <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Rutina principiante
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>culo</td>
+            <td>tetas</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExamplee" aria-expanded="false" aria-controls="collapseExample">
+          Rutina Nivel intermedio
+        </button>
+      </p>
+      <div class="collapse" id="collapseExamplee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExampleee" aria-expanded="false" aria-controls="collapseExample">
+          Rutina Nivel avanzado
+        </button>
+      </p>
+      <div class="collapse" id="collapseExampleee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      ...
+    </ion-list>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <ion-list *ngSwitchCase="'alto'">
+      <ion-item>
+      
+          <img src="assets/imagenes/gordo.jpg">
+       
+      </ion-item>
+      
+          <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Primer y segundo mes 
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>culo</td>
+            <td>tetas</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExamplee" aria-expanded="false" aria-controls="collapseExample">
+          Tercer y cuarto mes 
+        </button>
+      </p>
+      <div class="collapse" id="collapseExamplee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+
+      <p>
+        <button ion-button color="secondary" outline full data-toggle="collapse" data-target="#collapseExampleee" aria-expanded="false" aria-controls="collapseExample">
+          Quinto y sexto mes 
+        </button>
+      </p>
+      <div class="collapse" id="collapseExampleee">
+        <div class="card card-body">
+          <table class="table table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mancuernas</td>
+            <td>remos </td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+             <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+
+      ...
+    </ion-list>
+
+  </div>
+
+
 
 </ion-content>
+
+
+

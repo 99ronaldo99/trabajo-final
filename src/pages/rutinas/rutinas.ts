@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+
 
 /**
  * Generated class for the RutinasPage page.
@@ -20,6 +22,9 @@ export class RutinasPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RutinasPage');
+  }
+  openTabs(){
+    this.navCtrl.setRoot(HomePage)
   }
 
 }
