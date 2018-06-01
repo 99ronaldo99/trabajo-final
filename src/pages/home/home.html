@@ -9,14 +9,7 @@
     
     <ion-title padding   >
       Play Gym
-       <!-- <button ion-button color="corporate" style="float: right;" (click)="doLogout()" >
-        Cerrar cuenta
-      </button> -->
-
-       <!-- <button ion-button round style="float: right;"  (click)="openMenu()">
-        <ion-icon name="more">
-           </ion-icon>
-      </button> -->
+       
 
         <ion-fab class="submenu" right bottom>
           <button  ion-fab color="light" mini ><ion-icon name="arrow-dropleft"></ion-icon>
@@ -35,24 +28,31 @@
 
 <ion-content>
 
-
-
   <ion-slides pager >
+    
   <ion-slide >
     <ion-toolbar no-border-top>
      <ion-segment [(ngModel)]="pet">
     <ion-segment-button value="kittens">
       Ejercicios
     </ion-segment-button>
+
+
   </ion-segment>
+  <ion-img  style="width: 360px; height: 240px;" (click)="openEjercicios()" src="assets/imagenes/ejercicios.jpeg"></ion-img>
+  <ion-card>
+  <ion-card-content>
+    <strong>Solo los IMPARABLES entrenan, los perdedores de quejan.
+    </strong>
+  </ion-card-content>
+</ion-card>
+<button ion-button round (click)="openEjercicios()" > GO </button>
   </ion-toolbar>
-    <ion-img  style="width: 360px; height: 240px;" (click)="openEjercicios()" src="assets/imagenes/ejercicios.jpeg"></ion-img>
+    
   
   
 
   </ion-slide>
-
-
 
   <ion-slide >
     <ion-toolbar no-border-top>
@@ -61,8 +61,16 @@
       Rutinas
     </ion-segment-button>
   </ion-segment>
+  <ion-img  style="width: 360px; height: 240px;" (click)="openRutinas()" src="assets/imagenes/rutinas.jpeg"></ion-img>
+  <ion-card>
+  <ion-card-content>
+    <strong>Recuerda en cuanto has progresado,no lo que te falta.
+    </strong>
+  </ion-card-content>
+</ion-card>
+<button ion-button round (click)="openRutinas()" > GO </button>
 </ion-toolbar>
-    <ion-img  style="width: 360px; height: 240px;" (click)="openRutinas()" src="assets/imagenes/rutinas.jpeg"></ion-img>
+    
   </ion-slide>
   
   <ion-slide >
@@ -72,8 +80,16 @@
       Nutricion
     </ion-segment-button>
   </ion-segment>
+  <ion-img  style="width: 360px; height: 240px;" (click)="openNutricion()" src="assets/imagenes/reconutri.jpg"></ion-img>
+  <ion-card>
+  <ion-card-content>
+    <strong>Un ganador es un perdedor que no se dio porvencido.
+    </strong>
+  </ion-card-content>
+</ion-card>
+<button ion-button round (click)="openNutricion()" > GO </button>
 </ion-toolbar>
-    <ion-img  style="width: 360px; height: 240px;" (click)="openNutricion()" src="assets/imagenes/reconutri.jpg"></ion-img>
+    
   </ion-slide>
 
   <ion-slide >
@@ -83,11 +99,20 @@
       Recomendaciones
     </ion-segment-button>
   </ion-segment>
+   <ion-img  style="width: 360px; height: 240px;" (click)="openRecomendaciones()" src="assets/imagenes/nut.jpg"></ion-img>
+   <ion-card>
+  <ion-card-content>
+    <strong>El dolor es temporal, el orgullo es para siempre.
+    </strong>
+  </ion-card-content>
+</ion-card>
+<button ion-button round (click)="openRecomendaciones()"> GO </button>
 </ion-toolbar>
-    <ion-img  style="width: 360px; height: 240px;" (click)="openRecomendaciones()" src="assets/imagenes/nut.jpg"></ion-img>
+   
   </ion-slide>
 
 </ion-slides>
+  
 
 </ion-content>
 
