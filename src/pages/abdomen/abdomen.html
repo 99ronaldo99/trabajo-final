@@ -1,18 +1,116 @@
-<!--
-  Generated template for the AbdomenPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header color="corporate" >
+<ion-header  >
 
-  <ion-navbar>
-    <ion-title>abdomen</ion-title>
+  <ion-navbar color="corporate" >
+    <ion-title>Abdomen</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+	<ion-slides pager>
+
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment >
+      <ion-segment-button value="puppi">
+      Ejercicios con maquina
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+<ion-list>
+  
+    <button ion-item (click)="openModal({charNum: 74})">
+      Curl de abdomen
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 75})">
+      Curl de abdomen declinado
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 76})">
+      Flexión de piernas en banca
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 77})">
+      Curl en polea  
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 78})">
+      Laterales con mancuernas
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 79})">
+      Rotaciones laterales 
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 80})">
+      Elevaciones de rodillas en paralelas
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 81})">
+     Plancha en movimiento
+    </button>
+
+    <button  ion-item (click)="openModal({charNum: 82})">
+      Elevaciones de Tronco Banco Inclinado
+    </button>
+
+</ion-list>
+
+  </ion-slide>
+
+  
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pe">
+      <ion-segment-button value="pu">
+        Peso corporal
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+   <ion-list>
+    <button ion-item (click)="openModal({charNum: 64})">
+      Flexiones Diamantes
+    </button>
+    <button ion-item (click)="openModal({charNum: 65})">
+      Fondos en paralelas
+    </button>
+    <button ion-item (click)="openModal({charNum: 66})">
+      Fondos en banco
+    </button>
+    <button ion-item (click)="openModal({charNum: 67})">
+      Fondos en barra recta
+    </button>
+    <button ion-item (click)="openModal({charNum: 68})">
+      Fondos Coreanos
+    </button>
+    <button ion-item (click)="openModal({charNum: 69})">
+      Flexiones en Vertical 
+    </button>
+    <button ion-item (click)="openModal({charNum: 70})">
+      Extensión de Tríceps en Suelo
+    </button>
+    <button ion-item (click)="openModal({charNum: 71})">
+      Extensión de Tríceps en Barra
+    </button>
+    <button ion-item (click)="openModal({charNum: 72})">
+      Fondos Imposibles
+    </button>
+
+
+  </ion-list>
+
+
+  </ion-slide>
+
+  
+  
+
+</ion-slides>
 
 </ion-content>
