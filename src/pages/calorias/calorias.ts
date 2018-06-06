@@ -58,20 +58,23 @@ export class CaloriasPage {
    
     var actividad : string =  this.kcal.actividad ;
     var gender : string =  this.kcal.gender ;
+
+    var aumentar = 600;
+    var disminuir = 500 ;
     
    
       if (gender == "f" && actividad == "a" ){
         let alert = this.alertCtrl.create({
           title: 'Resultado',
-            message: 'Su resultado es '+ kcal2,
+            message: '- Para mantener tu peso debes consumir :'+ kcal2 + " calorias"+ "- Para aumentar tu peso debes consumir : "+(kcal2+aumentar) +" calorias "+ "- Para disminuar de peso debes consimir: " + (kcal2-disminuir)+ " calorias "  ,
             buttons: ['OK']
           });
         alert.present();
       }else{
         if(gender == "m" && actividad == "a" ) {
           let alert = this.alertCtrl.create({
-            title: 'Resultado',
-              message: 'Su resultado es '+ kcal1,
+            title: 'Resultado ',
+              message: '- Para mantener tu peso debes consumir : '+ kcal1 + " calorias"+ "- Para aumentar tu peso debes  consumir : "+(kcal1+aumentar) +" calorias  " + "- Para disminuar de peso debes consimir: " + (kcal1-disminuir)+ " calorias "  ,
             buttons: ['OK']
           });
           alert.present();
@@ -79,7 +82,7 @@ export class CaloriasPage {
           if(gender == "f" && actividad == "b"){
             let alert = this.alertCtrl.create({
               title: 'Resultado',
-                message: 'Su resultado es '+ kcal4,
+                message: '- Para mantener tu peso debes consumir : '+ kcal4 + " calorias" + "- Para aumentar tu peso debes  consumir : "+(kcal4+aumentar) +" calorias " + "- Para disminuar de peso debes consimir: " + (kcal4-disminuir)+ " calorias "  ,
               buttons: ['OK']
             });
             alert.present();
@@ -87,7 +90,7 @@ export class CaloriasPage {
             if(gender == "m" && actividad == "b"){
               let alert = this.alertCtrl.create({
                 title: 'Resultado',
-                  message: 'Su resultado es '+ kcal3,
+                  message: '- Para mantener tu peso debes consumir : '+ kcal3 + " calorias"+ "- Para aumentar tu peso debes  consumir : "+(kcal3+aumentar) +" calorias " + "- Para disminuar de peso debes consimir: " + (kcal3-disminuir)+ " calorias "  ,
                 buttons: ['OK']
               });
               alert.present();
@@ -96,7 +99,7 @@ export class CaloriasPage {
               if(gender == "f" && actividad == "c"){
                 let alert = this.alertCtrl.create({
                   title: 'Resultado',
-                    message: 'Su resultado es '+ kcal6,
+                    message: '- Para mantener tu peso debes consumir : '+ kcal6 + " calorias"+ "- Para aumentar tu peso debes  consumir : "+(kcal6+aumentar) +" calorias " + "- Para disminuar de peso debes consimir: " + (kcal6-disminuir)+ " calorias " ,
                    buttons: ['OK']
                   });
                 alert.present();
@@ -105,7 +108,7 @@ export class CaloriasPage {
                   if(gender == "m" && actividad == "c"){
                     let alert = this.alertCtrl.create({
                       title: 'Resultado',
-                        message: 'Su resultado es '+ kcal5,
+                        message: '- Para mantener tu peso debes consumir : '+ kcal5 + " calorias" + "- Para aumentar tu peso debes  consumir : "+(kcal5+aumentar) +" calorias " + "- Para disminuar de peso debes consimir: " + (kcal5-disminuir)+ " calorias "  ,
                        buttons: ['OK']
                       });
                     alert.present();
@@ -114,7 +117,7 @@ export class CaloriasPage {
                   if(gender == "f" && actividad == "d"){
                     let alert = this.alertCtrl.create({
                       title: 'Resultado',
-                        message: 'Su resultado es '+ kcal8,
+                        message: '- Para mantener tu peso debes consumir : '+ kcal8 + " calorias" + "- Para aumentar tu peso debes  consumir : "+(kcal8+aumentar) +" calorias " + "- Para disminuar de peso debes consimir: " + (kcal8-disminuir)+ " calorias "  ,
                        buttons: ['OK']
                       });
                     alert.present();
@@ -123,7 +126,8 @@ export class CaloriasPage {
                     if(gender == "m" && actividad == "d"){
                       let alert = this.alertCtrl.create({
                         title: 'Resultado',
-                          message: 'Su resultado es '+ kcal7,
+                          message: '- Para mantener tu peso debes consumir : '+ kcal7 + " calorias" + "- Para aumentar tu peso debes  consumir : "+(kcal7+aumentar) +" calorias " + "- Para disminuar de peso debes consimir: " + (kcal7-disminuir)+ " calorias "  ,
+
                          buttons: ['OK']
                         });
                       alert.present();

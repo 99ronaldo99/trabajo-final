@@ -1,50 +1,53 @@
-<ion-header >
+<ion-header>
 
   <ion-navbar color="corporate" >
-    <ion-title padding text-center >Indice de masa Corporal</ion-title>
+    <ion-title paddin text-center >Repeticion Maxima</ion-title>
   </ion-navbar>
-
-
 
 </ion-header>
 
 
-<ion-content ng-controller="ImcController" padding>
+<ion-content padding>
 
-	<ion-card>
+  <ion-card>
   <ion-card-content>
-    <strong>El Imc(indice de masa corporal), es una medida que segun tu peso y altura, te dara el resultado tu condicion fisica actual.
+    <strong>La repeticion maxima sirve para ver que peso puedes leventar depentiendo tu nivel de fuerza. 
     </strong>
   </ion-card-content>
 </ion-card>
 
+  <ion-list>
 
-
-
-
-<ion-list>
-
-   <ion-item>
-    <ion-label floating>Altura (Ejemplo: 1.80)</ion-label>
-    <ion-input type="number" required [(ngModel)]="user.altura" ></ion-input>
+  <ion-item>
+    <ion-label floating>Peso que levantas</ion-label>
+    <ion-input type="number" [(ngModel)]="user.peso" name="peso" ></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label floating>Peso (KG)</ion-label>
-    <ion-input type="number" required [(ngModel)]="user.peso" name="peso" ></ion-input>
+    <ion-label floating># de repeticiones que haces</ion-label>
+    <ion-input type="number" [(ngModel)]="user.repeticiones" name="repeticiones" ></ion-input>
   </ion-item>
-
- 
 
 </ion-list>
 
- <div padding text-center>
-<button ion-button color="hola" round  (click)="tryCalcular()" > Calcular IMC </button>
+<div padding text-center>
+<button ion-button color="hola" round (click)="tryRepe()" > Calcular la repet maxima</button>
 </div>
 
 <ion-card>
-<ion-card-content  text-center  >
-	Resultado
+<ion-card-content text-center  >
+  Resultado
  </ion-card-content>
 </ion-card>
 
+</ion-content>
+
+<ion-footer > 
+  <ion-navbar  >
+  <div text-center  >
+    <button color="corporate" class="boton" ion-button round icon-center (click)="openTabs()" >
+      <ion-icon name="keypad"></ion-icon>
+    </button>
+  </div>
+  </ion-navbar>
+</ion-footer>
