@@ -13,6 +13,110 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+
+	<ion-slides pager>
+
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment >
+      <ion-segment-button value="puppies">
+      Ejercicios con maquina
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+<ion-list>
+  
+    <button ion-item (click)="openModal({charNum: 83})">
+      Flexion con macuernas
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 84})">
+      Power squats
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 85})">
+      Extension de cadera en polea baja 
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 86})">
+      Extension de cadera en maquina
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 87})">
+      press de barra en maquina
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 88})">
+      Press con mancuernas 
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 89})">
+      Pull over con mancuerna
+    </button>
+
+    <button ion-item (click)="openModal({charNum: 90})">
+      Aperturas con contractor
+    </button>
+
+    <button  ion-item (click)="openModal({charNum: 91})">
+      Cruce de poleas
+    </button>
+
+</ion-list>
+
+  </ion-slide>
+
+  
+  <ion-slide >
+      <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Peso corporal
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+   <ion-list>
+    <button ion-item (click)="openModal({charNum: 9})">
+      Flexiones de brazos
+    </button>
+    <button ion-item (click)="openModal({charNum: 10})">
+      Flexiones de triceps
+    </button>
+    <button ion-item (click)="openModal({charNum: 11})">
+      Flexion diamante
+    </button>
+    <button ion-item (click)="openModal({charNum: 12})">
+      Flexiones inclinadas
+    </button>
+    <button ion-item (click)="openModal({charNum: 13})">
+      Flexiones declinadas
+    </button>
+    <button ion-item (click)="openModal({charNum: 14})">
+      Fondos 
+    </button>
+    <button ion-item (click)="openModal({charNum: 15})">
+      Flexion con palmadas
+    </button>
+    <button ion-item (click)="openModal({charNum: 16})">
+      Flexion delfin
+    </button>
+    <button ion-item (click)="openModal({charNum: 17})">
+      Flexion arquero
+    </button>
+
+
+  </ion-list>
+
+
+  </ion-slide>
+
+  
+  
+
+</ion-slides>
+
 
 </ion-content>
