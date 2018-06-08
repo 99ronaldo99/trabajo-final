@@ -146,7 +146,7 @@ export class InformacionPage {
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/pectorales/flexion  inclinado.gif', 
-        photo: 'assets/imagenes/pectorales/cruce de poleas.jpg' ,
+        photo: 'assets/imagenes/pectorales/flexion  inclinado.png' ,
       },
       { /*13*/
         name: 'Flexiones declinadas',
@@ -154,8 +154,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/cruce de poleas.gif', 
-        photo: 'assets/imagenes/pectorales/cruce de poleas.jpg' ,
+        image: 'assets/imagenes/pectorales/flexion declinada.jpeg', 
+        photo: 'assets/imagenes/pectorales/flexion declinada.png' ,
       },
       { /*14*/
         name: 'Fondos',
@@ -173,7 +173,7 @@ export class InformacionPage {
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/pectorales/flexion con palmadas.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        photo: 'assets/imagenes/pectorales/flexiones de brazos.jpg' ,
       },
       {/*16*/
         name: 'Flexion delfin',
@@ -182,7 +182,7 @@ export class InformacionPage {
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        photo: 'assets/imagenes/pectorales/flexiones de brazos.jpg' ,
         
       },
       {/*17*/
@@ -191,8 +191,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/pectorales/Flexion arquero.gif', 
+        photo: 'assets/imagenes/pectorales/flexiones de brazos.jpg' ,
       },/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
       {/*18*/
         name: 'Curl de biceps alterno',
@@ -200,18 +200,17 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl de Biceps alterno.gif', 
+        photo: 'assets/imagenes/biceps/Curl de Biceps alterno.jpg' ,
       },
       { /*19*/
         name: 'Curl de biceps concentrado',
-        quote: 'Go back, Sam! I\'m going to Mordor alone!',
-        image: 'assets/img/avatar-frodo.jpg',
-        items: [                                                   
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'Shire Folk' },
-          { title: 'Weapon', note: 'Sting' }
-        ]
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/biceps/Curl de biceps concentrado.gif', 
+        photo: 'assets/imagenes/biceps/Curl de biceps concentrado.jpg' ,
       },
       {/*20*/
         name: 'Curl martillo alterno',
@@ -219,8 +218,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl martillo alterno.gif', 
+        photo: 'assets/imagenes/biceps/Curl martillo alterno.jpg' ,
       },
       {/*21*/
         name: 'Curl de biceps polea',
@@ -228,8 +227,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl de biceps en polea.gif', 
+        photo: 'assets/imagenes/biceps/Curl de biceps en polea.jpg' ,
       },
       {/*22*/
         name: 'Curl de biceps en polea',
@@ -237,8 +236,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl de biceps en polea.gif', 
+        photo: 'assets/imagenes/biceps/Curl de biceps en polea.jpg' ,
       },
       { /*23*/
         name: 'Curl de biceps con barra',
@@ -246,8 +245,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/curl de biceps con barra.gif', 
+        photo: 'assets/imagenes/biceps/curl de biceps con barra.jpg' ,
       },
       { /*24*/
         name: 'Curl de banco Scott',
@@ -255,8 +254,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl en banco Scott.gif', 
+        photo: 'assets/imagenes/biceps/Curl en banco Scott.jpg' ,
       },
       {/*25*/
         name: 'Curl de biceps agarre pronacion',
@@ -264,8 +263,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl de biceps agarre pronacion.gif', 
+        photo: 'assets/imagenes/biceps/Curl de biceps agarre pronacion.jpg' ,
       },
       {/*26*/
         name: 'Curl de biceps en polea alta',
@@ -273,8 +272,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
+        image: 'assets/imagenes/biceps/Curl de biceps en polea alta.gif', 
+        photo: 'assets/imagenes/biceps/Curl de biceps en polea alta.jpg' ,
       },
       {/*27*/
         name: 'Curl de biceps en banco inclinados',
@@ -282,8 +281,8 @@ export class InformacionPage {
         quote2: '2.Tomar barra en agarre pronacion' ,
         quote3: '3.Inhalar mientras bajas la barra al pecho' ,
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,      },
+        image: 'assets/imagenes/biceps/Curl de biceps en banco inclinado.gif', 
+        photo: 'assets/imagenes/biceps/Curl de biceps en banco inclinado.png' ,      },
       {/*28*///////////////////////////////////////////////////////////////////////////////////////////////////
         name: 'Dominadas agarre hancho pronacion',
         quote1: '1.Acostarse en un banco pano' ,
@@ -829,8 +828,8 @@ export class InformacionPage {
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/gluteos/sancadas con barra.gif', 
         photo: 'assets/imagenes/gluteos/sancadas con barra.jpg' ,
-      },/*90*/
-      {/*89*/
+      },
+      {/*90*/
         name: 'sentadillas con barra',
         quote1: '1.Acostarse en un banco pano' ,
         quote2: '2.Tomar barra en agarre pronacion' ,
@@ -838,8 +837,8 @@ export class InformacionPage {
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/gluteos/sentadillas con barra.gif', 
         photo: 'assets/imagenes/gluteos/sentadillas con barra.png' ,
-      },/*90*/
-      {/*89*/
+      },
+      {/*91*/
         name: 'Pantorrilas - Elevaciones de Talones Sentado',
         quote1: '1.Acostarse en un banco pano' ,
         quote2: '2.Tomar barra en agarre pronacion' ,
@@ -847,7 +846,124 @@ export class InformacionPage {
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/gluteos/Pantorrilas - Elevaciones de Talones Sentado.gif', 
         photo: 'assets/imagenes/gluteos/Pantorrilas - Elevaciones de Talones Sentado.jpeg' ,
-      },/*90*/
+      },/*/////////////////////////////////////////// EJERCICIOS DE ANTEBRAZOS /////////////////////*/
+      {/*92*/
+        name: 'Curl Banco Scott Invertido',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/antebrazo/Curl Banco Scott Invertido.gif', 
+        photo: 'assets/imagenes/antebrazo/Curl de Muñeca Invertido.jpg' ,
+      },
+      {/*93*/
+        name: 'Curl Barra Invertido',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/antebrazo/Curl Barra Invertido.gif', 
+        photo: 'assets/imagenes/antebrazo/Curl Barra Invertido.jpg' ,
+      },
+      {/*94*/
+        name: 'Curl de Muñeca',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/antebrazo/curl de muneca.gif', 
+        photo: 'assets/imagenes/antebrazo/Curl de Muñeca.jpg' ,
+      },
+      {/*95*/
+        name: 'Curl de Muñeca Atrás de la Espalda',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/antebrazo/Curl de Muñeca Atrás de la Espalda.gif', 
+        photo: 'assets/imagenes/antebrazo/Curl de Muñeca Atrás de la Espaldaa.gif' ,
+      },
+      {/*96*/
+        name: 'Curl de Muñeca Invertido',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/antebrazo/Curl de Muñeca Invertido.gif', 
+        photo: 'assets/imagenes/antebrazo/Curl de Muñeca Invertido.jpg' ,
+      },/*////////////////////////////// EJERCICIOS DE HOMBRO Y TRaPECIO//////////////////////////////////*/
+      {/*97*/
+        name: 'apertura inversas mancuernas',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/apertura inversas mancuernas.jpg', 
+        photo: 'assets/imagenes/hombros/apertura inversas mancuernas.jpeg' ,
+      },
+      {/*98*/
+        name: 'Elevaciones Frontales con Disco',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/Elevaciones Frontales con Disco.gif', 
+        photo: 'assets/imagenes/hombros/Elevaciones Frontales con Disco.jpeg' ,
+      },
+      {/*99*/
+        name: 'Elevación Frontal con Mancuerna',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/Elevación Frontal con Mancuerna.gif', 
+        photo: 'assets/imagenes/hombros/Elevación Frontal con Mancuerna.png ' ,
+      },
+      {/*100*/
+        name: 'extension hombros en polea',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/extension hombros en polea.gif', 
+        photo: 'assets/imagenes/hombros/extension hombros en polea.jpg' ,
+      },
+      {/*101*/
+        name: 'Levantamientos Laterales con Mancuernas',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho',
+        image: 'assets/imagenes/hombros/Levantamientos Laterales con Mancuernas.gif', 
+        photo: 'assets/imagenes/hombros/Levantamientos Laterales con Mancuernas.png' ,
+      },
+      {/*102*/
+        name: 'Press Militar',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/Press Militar.gif', 
+        photo: 'assets/imagenes/hombros/Press Militar.jpg' ,
+      },
+      {/*103*/
+        name: 'Press Militar Sentado',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/Press Militar Sentado.gif', 
+        photo: 'assets/imagenes/hombros/Press Militar Sentado.jpeg' ,
+      },
+      {/*104*/
+        name: 'Remo al mentón con agarre ancho',
+        quote1: '1.Acostarse en un banco pano' ,
+        quote2: '2.Tomar barra en agarre pronacion' ,
+        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
+        quote4: '4.Exhalar mientras subes la barra del pecho' ,
+        image: 'assets/imagenes/hombros/Remo al mentón con agarre ancho.gif', 
+        photo: 'assets/imagenes/hombros/Remo al mentón con agarre ancho.jpeg' ,
+      },/*//////////////////////////////////////////////////////////////////////////////////////////////*/
       {/*89*/
         name: 'Dominadas Polea Nuca',
         quote1: '1.Acostarse en un banco pano' ,
@@ -856,7 +972,7 @@ export class InformacionPage {
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/pectorales/flexion delfin.gif', 
         photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
+      },
       {/*89*/
         name: 'Dominadas Polea Nuca',
         quote1: '1.Acostarse en un banco pano' ,
@@ -865,124 +981,7 @@ export class InformacionPage {
         quote4: '4.Exhalar mientras subes la barra del pecho' ,
         image: 'assets/imagenes/pectorales/flexion delfin.gif', 
         photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
-      {/*89*/
-        name: 'Dominadas Polea Nuca',
-        quote1: '1.Acostarse en un banco pano' ,
-        quote2: '2.Tomar barra en agarre pronacion' ,
-        quote3: '3.Inhalar mientras bajas la barra al pecho' ,
-        quote4: '4.Exhalar mientras subes la barra del pecho' ,
-        image: 'assets/imagenes/pectorales/flexion delfin.gif', 
-        photo: 'assets/imagenes/pectorales/fondos.jpg' ,
-      },/*90*/
+      },
       {/*89*/
         name: 'Dominadas Polea Nuca',
         quote1: '1.Acostarse en un banco pano' ,

@@ -7,7 +7,7 @@ import { HombrosPage } from '../hombros/hombros';
 import { PiernasPage } from '../piernas/piernas';
 import { AbdomenPage } from '../abdomen/abdomen';
 import { EspaldaPage } from '../espalda/espalda';
-import { GluteosPage } from '../gluteos/gluteos';
+import { AntebrazoPage } from '../antebrazo/antebrazo';
 import { PectoralesPage } from '../pectorales/pectorales';
 import { ModalController, } from 'ionic-angular';
 
@@ -62,8 +62,8 @@ export class EjerciciosPage {
     this.navCtrl.push(PiernasPage)
   }
 
-  openGluteos(){
-    this.navCtrl.push(GluteosPage)
+  openAntebrazo(){
+    this.navCtrl.push(AntebrazoPage)
   }
 
   openEspalda(){

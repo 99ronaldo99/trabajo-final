@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ModalController } from 'ionic-angular';
+import { ModalController} from 'ionic-angular';
 import  {InformacionPage}from '../informacion/informacion'
-;
+
 
 /**
- * Generated class for the HombrosPage page.
+ * Generated class for the AntebrazoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,10 +13,10 @@ import  {InformacionPage}from '../informacion/informacion'
 
 @IonicPage()
 @Component({
-  selector: 'page-hombros',
-  templateUrl: 'hombros.html',
+  selector: 'page-antebrazo',
+  templateUrl: 'antebrazo.html',
 })
-export class HombrosPage {
+export class AntebrazoPage {
 
   constructor(
   	public navCtrl: NavController, 
@@ -25,7 +25,7 @@ export class HombrosPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HombrosPage');
+    console.log('ionViewDidLoad AntebrazoPage');
   }
 
   openModal(characterNum) {
